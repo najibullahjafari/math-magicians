@@ -6,28 +6,6 @@ Math Magicians
 
 </div>
 
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
 # 📖 Math Magicians <a name="about-project"></a>
 
 Math Magicians is a web app to work like a calculator, I used React and JSX to build this web app.
@@ -197,7 +175,7 @@ Your working browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/najibullahjafari/).
+Feel free to check the [issues page](https://github.com/najibullahjafari/math-magicians).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
