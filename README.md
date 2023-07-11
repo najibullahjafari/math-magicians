@@ -68,8 +68,7 @@ Math magician is an app to work as a calculator, I used React and Jsx for buildi
 - Responsive design for different screen sizes
 - In this project best coding practices is used.
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
