@@ -30,7 +30,7 @@ Math Magicians
 
 # 📖 Math Magicians <a name="about-project"></a>
 
-Math Magicians
+Math Magicians is a web app to work like a calculator, I used React and JSX to build this web app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
