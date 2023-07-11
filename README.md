@@ -30,7 +30,7 @@ Math Magicians
 
 # 📖 About the project <a name="about-project"></a>
 
-It is a library!
+Math magician is an app to work as a calculator, I used React and Jsx for building this web app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,7 +70,6 @@ It is a library!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[comming soon!]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
