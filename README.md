@@ -28,7 +28,7 @@ Math Magicians
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 About the project <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
 Math Magicians
 
