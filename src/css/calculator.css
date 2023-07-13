@@ -14,15 +14,28 @@
 
 .cal-screen {
   grid-column: span 4;
-  height: 40px;
+  min-height: 60px;
+  max-height: 120px; /* Adjust the max-height value as needed */
+  overflow-y: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
   padding: 0 10px;
   font-size: 18px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.pre-screen {
+  font-size: 14px;
+  color: rgb(106, 101, 101);
+}
+
+.cur-screen {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .cal-batn {
@@ -32,6 +45,14 @@
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.cal-batn:hover {
+  background-color: #eaf0f0;
+}
+
+.cal-batn:active {
+  background-color: #696767;
 }
 
 .cal-batn-zero {
