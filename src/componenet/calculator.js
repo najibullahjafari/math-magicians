@@ -8,6 +8,12 @@ function MyComponent() {
   const [operation, setOperation] = useState(null);
 
   const handleButtonClick = (buttonName) => {
+    if (buttonName === 'x' || buttonName === '+' || buttonName === '-' || buttonName === '÷') {
+      // Check if the current screen value is not a number
+      if (Number.isNaN(Number(curScreen))) {
+        return;
+      }
+    }
     const result = calculate({ total: preScreen, next: curScreen, operation }, buttonName);
     setPreScreen(result.total || '');
     setCurScreen(result.next || '0');

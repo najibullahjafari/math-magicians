@@ -1,8 +1,10 @@
+.page-con {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+}
+
 .cal-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -10,6 +12,7 @@
   background-color: #f0f0f0;
   border-radius: 5px;
   width: 50vh;
+  align-self: center;
 }
 
 .cal-screen {
@@ -57,4 +60,13 @@
 
 .cal-batn-zero {
   grid-column: span 2;
+}
+
+/* ABOUT THE QUOTES */
+
+.quote-con {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  padding: 12px;
 }
