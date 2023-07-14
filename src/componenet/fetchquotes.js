@@ -39,7 +39,7 @@ function QuoteComponent() {
 
   return (
     <div className="quote-con">
-      <h2>Random Quote:</h2>
+      <h2> Quote:</h2>
       <p>{quote}</p>
       <p>{author}</p>
     </div>
