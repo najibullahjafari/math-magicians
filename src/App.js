@@ -1,11 +1,9 @@
-import MyComponent from './componenet/calculator';
-import Quote from './componenet/fetchquotes';
+import AppRouter from './AppRouter';
 
 function App() {
   return (
     <div className="page-con">
-      <MyComponent />
-      <Quote />
+      <AppRouter />
     </div>
   );
 }
