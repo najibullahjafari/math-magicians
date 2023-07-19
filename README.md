@@ -115,13 +115,11 @@ Clone this repository to your desired folder:
 
 Please do the following **steps in this order**:
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-   - **Remember** to use the file linked above
-   - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-3. When you open your first pull request you should see the result of the GitHub Actions:
+1. Use `npm run build` to instal all dependencies.
+2. Then you can run project by `npm start` command
 
 Linters:
+If you had any issues with linters for `react` you can install as bellow:
 
 ### ESLint
 
