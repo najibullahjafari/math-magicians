@@ -95,6 +95,7 @@ body {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: inset 4px -7px 5px rgba(0, 0, 0, 0.2);
 }
 
 .cal-batn:hover {

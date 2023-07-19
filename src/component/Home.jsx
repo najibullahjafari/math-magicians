@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => (
   <>
     <div className="home-con">
-      <h2>Welcome to the Home page!</h2>
+      <h4>Welcome to the Home page!</h4>
       <p>
         In other words, the message is to prioritize meaningful relationships
         and fully invest in being an essential part of someone else life.

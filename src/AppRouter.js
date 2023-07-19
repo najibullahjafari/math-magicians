@@ -6,19 +6,36 @@ import Home from './component/Home';
 import Calculator from './component/calculator';
 import QuoteComponent from './component/fetchquotes';
 
+const linkStyles = {
+  color: 'black',
+  textDecoration: 'none',
+  paddingRight: '10px',
+  borderRight: '2px solid black',
+};
+
+const linkStyles1 = {
+  color: 'black',
+  textDecoration: 'none',
+};
 const AppRouter = () => (
   <Router>
     <nav className="navbar">
-      <h1>Math Magicicians</h1>
+      <h2>Math Magicicians</h2>
       <ul className="list-con ">
         <li className="">
-          <Link to="/">Home</Link>
+          <Link style={linkStyles} to="/">
+            Home
+          </Link>
         </li>
         <li className="">
-          <Link to="/calculator">Calculator</Link>
+          <Link style={linkStyles} to="/calculator">
+            Calculator
+          </Link>
         </li>
         <li className="">
-          <Link to="/quote">Quote</Link>
+          <Link style={linkStyles1} to="/quote">
+            Quote
+          </Link>
         </li>
       </ul>
     </nav>
