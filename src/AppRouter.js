@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router, Route, Link, Routes,
 } from 'react-router-dom';
 import Home from './component/Home';
-import Calculator from './component/calculator';
+import Calculator from './component/calculator.jsx';
 import QuoteComponent from './component/fetchquotes';
 
 const linkStyles = {
