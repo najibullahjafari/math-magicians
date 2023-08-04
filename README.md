@@ -29,6 +29,8 @@ Math Magicians
 # 📖 Math Magicians <a name="about-project"></a>
 
 Math Magicians is a web app to work like a calculator, I used React and JSX to build this web app.
+<img width="959" alt="Screenshot 2023-07-19 131042" src="https://github.com/najibullahjafari/math-magicians/assets/121656832/2fdaa895-c4e2-4b76-bac8-60f5209c3f67">
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
