@@ -11,6 +11,7 @@ Math Magicians
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo) 
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -65,7 +66,10 @@ Math Magicians is a web app to work like a calculator, I used React and JSX to b
 - Responsive design for different screen sizes
 - In this project best coding practices is used.
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Check out the live demo of this project [here](https://zingy-quokka-cdc3ed.netlify.app/calculator).
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
