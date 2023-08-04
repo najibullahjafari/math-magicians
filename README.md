@@ -69,7 +69,7 @@ Math Magicians is a web app to work like a calculator, I used React and JSX to b
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Check out the live demo of this project [here](https://zingy-quokka-cdc3ed.netlify.app/).
+Check out the live demo of this project [here](https://zingy-quokka-cdc3ed.netlify.app).
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
