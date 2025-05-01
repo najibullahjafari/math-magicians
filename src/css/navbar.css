@@ -1,0 +1,128 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  padding: 22px 48px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 6px 24px rgba(31, 38, 135, 0.18);
+  margin-bottom: 36px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-brand h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 2px 12px #0008;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 12px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(90deg, #ffb347 0%, #ff6f61 100%);
+  color: #232526;
+  box-shadow: 0 4px 16px rgba(255, 111, 97, 0.18);
+  outline: none;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 8px;
+}
+
+.navbar-hamburger {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.routes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(
+    100vh - 200px
+  ); /* Adjust height based on navbar and footer */
+  padding: 0 20px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 10px; /* Reduce horizontal padding */
+    border-radius: 0 0 14px 14px;
+    margin-bottom: 18px;
+  }
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .navbar-brand h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    flex: 1;
+    margin-left: 8px;
+  }
+  .navbar-toggle {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px;
+    z-index: 20;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+    margin-top: 8px;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 6px 24px rgba(31, 38, 135, 0.18);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    padding: 12px 0;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+}

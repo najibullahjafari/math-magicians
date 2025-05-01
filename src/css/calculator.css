@@ -1,120 +1,117 @@
-/* nav bar styles */
-
-body {
-  margin: 0;
-  text-decoration: none;
-}
-
-.navbar {
-  background-color: #f0f1eb;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 12px;
-}
-
-.list-con {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: flex-end;
-  gap: 12px;
-  border-right: 1px black;
-  padding-right: 12px;
-  text-decoration: none;
-}
-
-/* home part  */
-
-.home-con {
-  padding: 14px;
-}
-
-.page-con {
-  display: flex;
-  flex-direction: column;
-  background-color: beige;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
-
-/* calculator */
-
 .cal-page {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+
+.calculator-header {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .cal-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  width: 50vh;
-  margin: 50px;
-  align-self: end;
-}
-
-.calculator-header {
-  padding: 14px;
+  grid-template-columns: repeat(4, 80px);
+  gap: 18px;
+  padding: 32px 28px 28px 28px;
+  background: rgba(30, 30, 40, 0.95);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .cal-screen {
   grid-column: span 4;
-  min-height: 60px;
-  max-height: 120px; /* Adjust the max-height value as needed */
+  min-height: 80px;
+  max-height: 120px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 0 10px;
-  font-size: 18px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 18px 16px 8px 16px;
+  font-size: 22px;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  border-radius: 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 .pre-screen {
-  font-size: 14px;
-  color: rgb(106, 101, 101);
+  font-size: 16px;
+  color: #bdbdbd;
+  opacity: 0.7;
 }
 
 .cur-screen {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .cal-batn {
   width: 100%;
-  height: 40px;
-  font-size: 16px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: inset 4px -7px 5px rgba(0, 0, 0, 0.2);
+  height: 56px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #434343 0%, #262626 100%);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18), 0 1.5px 0 #222 inset;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  cursor: pointer;
+  outline: none;
 }
 
 .cal-batn:hover {
-  background-color: #eaf0f0;
+  background: linear-gradient(135deg, #5a5a5a 0%, #353535 100%);
+  color: #ffd700;
+  transform: translateY(-2px) scale(1.04);
 }
 
 .cal-batn:active {
-  background-color: #696767;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #ff6f61;
+  transform: scale(0.98);
 }
 
 .cal-batn-zero {
   grid-column: span 2;
 }
 
-/* ABOUT THE QUOTES */
+.btn-equal {
+  background: linear-gradient(135deg, #ff6f61 0%, #ffb347 100%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(255, 111, 97, 0.18), 0 1.5px 0 #ffb347 inset;
+}
 
-.quote-con {
-  display: flex;
-  flex-direction: column;
-  background-color: beige;
-  padding: 12px;
+.btn-equal:hover {
+  background: linear-gradient(135deg, #ffb347 0%, #ff6f61 100%);
+  color: #232526;
+}
+
+.btn-equal:active {
+  background: linear-gradient(135deg, #ff6f61 0%, #ffb347 100%);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .cal-container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 95vw;
+    padding: 12px 4px 16px 4px;
+  }
+  .cal-screen {
+    font-size: 16px;
+    padding: 8px 6px 4px 6px;
+  }
 }

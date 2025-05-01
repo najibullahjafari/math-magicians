@@ -1,0 +1,88 @@
+.quote-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: 36px 0;
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.14);
+  margin: 32px auto;
+  max-width: 700px;
+  min-height: 60vh;
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 36px 28px;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.quote-title {
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 12px #0008;
+}
+
+.quote-text {
+  color: #fff;
+  font-size: 1.35rem;
+  font-style: italic;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.quote-author {
+  color: #ffb347;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.loading,
+.error {
+  min-height: 120px;
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.quote-loader {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #ffd700;
+  border-top: 4px solid #414345;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .quote-con {
+    padding: 12px 0;
+    border-radius: 14px;
+    margin: 12px;
+  }
+  .quote-card {
+    padding: 16px 8px;
+    border-radius: 10px;
+  }
+  .quote-title {
+    font-size: 1.2rem;
+  }
+}

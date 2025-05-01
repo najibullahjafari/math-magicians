@@ -1,0 +1,30 @@
+.quote-filter-form {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quote-category-select,
+.quote-author-input {
+  background: #232526;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 140px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.quote-category-select:focus,
+.quote-author-input:focus {
+  border: 2px solid #ffb347;
+  box-shadow: 0 0 8px #ffb34788;
+}

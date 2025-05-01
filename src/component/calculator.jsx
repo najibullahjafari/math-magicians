@@ -30,7 +30,6 @@ function Calculator() {
 
   return (
     <div className="cal-page">
-      <h4 className="calculator-header">lets do some calculations!</h4>
       <div className="cal-container">
         <div className="cal-screen">
           <div className="pre-screen">{preScreen}</div>
