@@ -62,22 +62,35 @@ function QuoteComponent() {
         <h2 className="quote-title">Inspiring Quote</h2>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <button
+            type="button"
             aria-label="Previous quote"
             className="quote-arrow"
             onClick={handlePrev}
-            style={{ fontSize: '2rem', background: 'none', border: 'none', cursor: 'pointer' }}
+            style={{
+              fontSize: '2rem', background: 'none', border: 'none', cursor: 'pointer',
+            }}
           >
             &#8592;
           </button>
           <div>
-            <blockquote className="quote-text">“{quote}”</blockquote>
-            <p className="quote-author">— {author}</p>
+            <blockquote className="quote-text">
+              “
+              {quote}
+              ”
+            </blockquote>
+            <p className="quote-author">
+              —
+              {author}
+            </p>
           </div>
           <button
+            type="button"
             aria-label="Next quote"
             className="quote-arrow"
             onClick={handleNext}
-            style={{ fontSize: '2rem', background: 'none', border: 'none', cursor: 'pointer' }}
+            style={{
+              fontSize: '2rem', background: 'none', border: 'none', cursor: 'pointer',
+            }}
           >
             &#8594;
           </button>

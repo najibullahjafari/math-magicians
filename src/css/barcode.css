@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
   padding: 36px 0;
   background: linear-gradient(120deg, #232526 0%, #414345 100%);
   border-radius: 28px;
@@ -145,10 +144,12 @@
     border-radius: 14px;
     margin: 12px;
   }
+
   .barcode-card {
     padding: 16px 8px;
     border-radius: 10px;
   }
+
   .barcode-title {
     font-size: 1.2rem;
   }

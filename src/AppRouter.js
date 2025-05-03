@@ -6,10 +6,10 @@ import Home from './component/Home';
 import Calculator from './component/calculator.jsx';
 import QuoteComponent from './component/fetchquotes';
 import './css/navbar.css';
-import Footer from './component/Footer.jsx';
-import ExchangeRateComponent from './component/Exchange_Rate.jsx';
-import NutritionComponent from './component/NutritionComponent.jsx';
-import BarcodeGenerator from './component/BarcodeGeneretor.jsx';
+import Footer from './component/Footer';
+import ExchangeRateComponent from './component/Exchange_Rate';
+import NutritionComponent from './component/NutritionComponent';
+import BarcodeGenerator from './component/BarcodeGeneretor';
 
 const AppRouter = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +24,7 @@ const AppRouter = () => {
           <span role="img" aria-label="magic">✨</span>
           <h2>Math Magicians</h2>
           <button
+            type="button"
             className="navbar-toggle"
             aria-label="Toggle menu"
             onClick={() => setMenuOpen((open) => !open)}

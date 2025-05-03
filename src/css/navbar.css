@@ -71,9 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(
-    100vh - 200px
-  ); /* Adjust height based on navbar and footer */
+  min-height: calc(100vh - 200px);
   padding: 0 20px;
 }
 
@@ -82,10 +80,11 @@
     position: relative;
     flex-direction: column;
     align-items: stretch;
-    padding: 12px 10px; /* Reduce horizontal padding */
+    padding: 12px 10px;
     border-radius: 0 0 14px 14px;
     margin-bottom: 18px;
   }
+
   .navbar-brand {
     width: 100%;
     display: flex;
@@ -93,12 +92,14 @@
     align-items: center;
     margin-bottom: 0;
   }
+
   .navbar-brand h2 {
     font-size: 1.1rem;
     text-align: center;
     flex: 1;
     margin-left: 8px;
   }
+
   .navbar-toggle {
     display: block;
     margin-left: 0;
@@ -106,6 +107,7 @@
     padding: 8px;
     z-index: 20;
   }
+
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -122,6 +124,7 @@
     z-index: 10;
     padding: 12px 0;
   }
+
   .navbar-links.open {
     display: flex;
   }

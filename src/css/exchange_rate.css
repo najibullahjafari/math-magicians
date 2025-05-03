@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
   padding: 36px 0;
   background: linear-gradient(120deg, #232526 0%, #414345 100%);
   border-radius: 28px;
@@ -33,6 +32,7 @@
 .exchange-form {
   margin-bottom: 18px;
 }
+
 .exchange-selects {
   display: flex;
   align-items: center;
@@ -118,24 +118,29 @@
     transform: rotate(360deg);
   }
 }
+
 @media (max-width: 700px) {
   .exchange-con {
     padding: 12px 0;
     border-radius: 14px;
     margin: 12px;
   }
+
   .exchange-card {
     padding: 12px 4px;
     border-radius: 10px;
   }
+
   .exchange-title {
     font-size: 1.1rem;
   }
+
   .exchange-selects {
     flex-direction: column;
     gap: 10px;
     align-items: stretch;
   }
+
   .exchange-select {
     font-size: 1rem;
     padding: 7px 10px;
@@ -143,6 +148,7 @@
     width: 100%;
     margin: 0 auto;
   }
+
   .exchange-arrow {
     display: none;
   }

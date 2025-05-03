@@ -29,7 +29,7 @@ function ExchangeRateComponent() {
     try {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/exchangerate?pair=${fromCurr}_${toCurr}`,
-        { headers: { 'X-Api-Key': 'XrVqjM1uEDWD3unxglcTsg==qlj5m86gjEcGnwEz' } }
+        { headers: { 'X-Api-Key': 'XrVqjM1uEDWD3unxglcTsg==qlj5m86gjEcGnwEz' } },
       );
       if (!response.ok) throw new Error('Failed to fetch');
       const data = await response.json();
@@ -53,17 +53,20 @@ function ExchangeRateComponent() {
         <h2 className="exchange-title">Currency Exchange Rate</h2>
         <form
           className="exchange-form"
-          onSubmit={e => { e.preventDefault(); fetchRate(from, to); }}
+          onSubmit={(e) => { e.preventDefault(); fetchRate(from, to); }}
         >
           <div className="exchange-selects">
             <select
               className="exchange-select"
               value={from}
-              onChange={e => setFrom(e.target.value)}
+              onChange={(e) => setFrom(e.target.value)}
             >
-              {CURRENCIES.map(cur => (
+              {CURRENCIES.map((cur) => (
                 <option key={cur.code} value={cur.code}>
-                  {cur.code} - {cur.name}
+                  {cur.code}
+                  {' '}
+                  -
+                  {cur.name}
                 </option>
               ))}
             </select>
@@ -71,10 +74,10 @@ function ExchangeRateComponent() {
             <select
               className="exchange-select"
               value={to}
-              onChange={e => setTo(e.target.value)}
+              onChange={(e) => setTo(e.target.value)}
             >
-              {CURRENCIES.map(cur => (
-                <option className='exchange-options' key={cur.code} value={cur.code}>
+              {CURRENCIES.map((cur) => (
+                <option className="exchange-options" key={cur.code} value={cur.code}>
                   {cur.name}
                 </option>
               ))}
@@ -96,12 +99,22 @@ function ExchangeRateComponent() {
           <div className="exchange-rate">
             <span className="rate-value">{rate}</span>
             <span className="rate-label">
-              1 {from} = {rate} {to}
+              1
+              {' '}
+              {from}
+              {' '}
+              =
+              {' '}
+              {rate}
+              {' '}
+              {to}
             </span>
             {timestamp && (
               <div className="rate-time">
                 <small>
-                  Updated: {new Date(timestamp * 1000).toLocaleString()}
+                  Updated:
+                  {' '}
+                  {new Date(timestamp * 1000).toLocaleString()}
                 </small>
               </div>
             )}

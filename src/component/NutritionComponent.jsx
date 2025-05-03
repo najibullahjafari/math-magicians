@@ -32,7 +32,7 @@ function NutritionComponent() {
     try {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/nutrition?query=${encodeURIComponent(food)}`,
-        { headers: { 'X-Api-Key': 'XrVqjM1uEDWD3unxglcTsg==qlj5m86gjEcGnwEz' } }
+        { headers: { 'X-Api-Key': 'XrVqjM1uEDWD3unxglcTsg==qlj5m86gjEcGnwEz' } },
       );
       if (!response.ok) throw new Error('Failed to fetch');
       const data = await response.json();
@@ -57,15 +57,20 @@ function NutritionComponent() {
     <section className="nutrition-con">
       <div className="nutrition-card">
         <h2 className="nutrition-title">Nutrition Analyzer</h2>
-        <form className="nutrition-form" onSubmit={e => e.preventDefault()}>
+        <form className="nutrition-form" onSubmit={(e) => e.preventDefault()}>
           <select
             className="nutrition-input"
             value={selectedFood}
             onChange={handleSelect}
           >
             <option value="">Select a food...</option>
-            {FOOD_OPTIONS.map(food => (
-              <option key={food} value={food}>{food.charAt(0).toUpperCase() + food.slice(1)}</option>
+            {FOOD_OPTIONS.map((food) => (
+              <option
+                key={food}
+                value={food}
+              >
+                {food.charAt(0).toUpperCase() + food.slice(1)}
+              </option>
             ))}
           </select>
         </form>
@@ -82,18 +87,66 @@ function NutritionComponent() {
         )}
         {!isLoading && !hasError && nutrition.length > 0 && (
           <div className="nutrition-results">
-            {nutrition.map((item, idx) => (
-              <div className="nutrition-item" key={item.name + idx}>
+            {nutrition.map((item) => (
+              <div className="nutrition-item" key={item.name}>
                 <h3>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h3>
                 <ul>
-                  <li><strong>Calories:</strong> {item.calories}</li>
-                  <li><strong>Serving Size:</strong> {item.serving_size_g}g</li>
-                  <li><strong>Fat:</strong> {item.fat_total_g}g (Saturated: {item.fat_saturated_g}g)</li>
-                  <li><strong>Protein:</strong> {item.protein_g}g</li>
-                  <li><strong>Sodium:</strong> {item.sodium_mg}mg</li>
-                  <li><strong>Potassium:</strong> {item.potassium_mg}mg</li>
-                  <li><strong>Cholesterol:</strong> {item.cholesterol_mg}mg</li>
-                  <li><strong>Carbs:</strong> {item.carbohydrates_total_g}g (Fiber: {item.fiber_g}g, Sugar: {item.sugar_g}g)</li>
+                  <li>
+                    <strong>Calories:</strong>
+                    {' '}
+                    {item.calories}
+                  </li>
+                  <li>
+                    <strong>Serving Size:</strong>
+                    {' '}
+                    {item.serving_size_g}
+                    g
+                  </li>
+                  <li>
+                    <strong>Fat:</strong>
+                    {' '}
+                    {item.fat_total_g}
+                    g (Saturated:
+                    {' '}
+                    {item.fat_saturated_g}
+                    g)
+                  </li>
+                  <li>
+                    <strong>Protein:</strong>
+                    {' '}
+                    {item.protein_g}
+                    g
+                  </li>
+                  <li>
+                    <strong>Sodium:</strong>
+                    {' '}
+                    {item.sodium_mg}
+                    mg
+                  </li>
+                  <li>
+                    <strong>Potassium:</strong>
+                    {' '}
+                    {item.potassium_mg}
+                    mg
+                  </li>
+                  <li>
+                    <strong>Cholesterol:</strong>
+                    {' '}
+                    {item.cholesterol_mg}
+                    mg
+                  </li>
+                  <li>
+                    <strong>Carbs:</strong>
+                    {' '}
+                    {item.carbohydrates_total_g}
+                    g (Fiber:
+                    {' '}
+                    {item.fiber_g}
+                    g, Sugar:
+                    {' '}
+                    {item.sugar_g}
+                    g)
+                  </li>
                 </ul>
               </div>
             ))}

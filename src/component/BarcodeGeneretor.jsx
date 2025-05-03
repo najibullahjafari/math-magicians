@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import '../css/barcode.css';
 
 const BARCODE_TYPES = [
-  'code39', 'code128', 'ean', 'ean13', 'ean8', 'gs1', 'gtin', 'isbn', 'isbn10', 'isbn13', 'issn', 'jan', 'pzn', 'upc', 'upca'
+  'code39', 'code128', 'ean', 'ean13', 'ean8', 'gs1', 'gtin', 'isbn', 'isbn10', 'isbn13', 'issn', 'jan', 'pzn', 'upc', 'upca',
 ];
 
 function BarcodeGenerator() {
@@ -12,7 +12,6 @@ function BarcodeGenerator() {
   const [barcodeUrl, setBarcodeUrl] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const downloadRef = useRef(null);
 
   const handleGenerate = async (e) => {
     e.preventDefault();
@@ -24,16 +23,16 @@ function BarcodeGenerator() {
         text,
         type,
         format,
-        include_text: 'true'
+        include_text: 'true',
       });
       const response = await fetch(
         `https://api.api-ninjas.com/v1/barcodegenerate?${params.toString()}`,
         {
           headers: {
             'X-Api-Key': 'XrVqjM1uEDWD3unxglcTsg==qlj5m86gjEcGnwEz',
-            'Accept': format === 'svg' ? 'image/svg+xml' : 'image/png'
-          }
-        }
+            Accept: format === 'svg' ? 'image/svg+xml' : 'image/png',
+          },
+        },
       );
       if (!response.ok) throw new Error('Failed to generate barcode');
       const blob = await response.blob();
@@ -64,22 +63,22 @@ function BarcodeGenerator() {
             type="text"
             placeholder="Enter text to encode"
             value={text}
-            onChange={e => setText(e.target.value)}
+            onChange={(e) => setText(e.target.value)}
             required
           />
           <select
             className="barcode-select"
             value={type}
-            onChange={e => setType(e.target.value)}
+            onChange={(e) => setType(e.target.value)}
           >
-            {BARCODE_TYPES.map(t => (
+            {BARCODE_TYPES.map((t) => (
               <option key={t} value={t}>{t.toUpperCase()}</option>
             ))}
           </select>
           <select
             className="barcode-select"
             value={format}
-            onChange={e => setFormat(e.target.value)}
+            onChange={(e) => setFormat(e.target.value)}
           >
             <option value="png">PNG</option>
             <option value="svg">SVG</option>
